@@ -1,0 +1,123 @@
+[tool.poetry]
+name = "financetoolkit"
+version = "2.0.4"
+description = "Transparent and Efficient Financial Analysis"
+license = "MIT"
+authors = ["Jeroen Bouma"]
+packages = [
+    { include = "financetoolkit" },
+]
+include = ["normalization/*.csv", "financetoolkit/portfolio/example_datasets/*"]
+readme = "README.md"
+homepage = "https://www.jeroenbouma.com/projects/financetoolkit"
+repository = "https://github.com/JerBouma/FinanceToolkit"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+keywords = [
+    "Finance",
+    "Toolkit",
+    "Financial",
+    "Analysis",
+    "Fundamental",
+    "Technical",
+    "Quantitative",
+    "Database",
+    "Equities",
+    "Currencies",
+    "Economics",
+    "ETFs",
+    "Funds",
+    "Indices",
+    "Moneymarkets",
+    "Commodities",
+    "Options"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.14"
+pandas = "^2.2"
+scikit-learn = "^1.6"
+requests = "^2.32"
+yfinance = "*"
+openpyxl = "^3.1"
+tqdm = "^4.67"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+ipykernel = "^6.29.5"
+tqdm = "^4.67.1"
+pylint = "^3.3.6"
+codespell = "^2.4.1"
+black = {extras = ["jupyter"], version = "^25.1.0"}
+pytest-mock = "^3.14.0"
+pytest-recording = "^0.13.2"
+pytest-cov = "^6.1.1"
+pytest-timeout = "^2.3.1"
+ruff = "^0.11.4"
+mypy = "^1.15.0"
+types-pyyaml = "^6.0.12.20250402"
+types-requests = "^2.32.0.20250328"
+
+[tool.poetry.group.dashboard.dependencies]
+plotly = "^6.0.1"
+streamlit = "^1.44.1"
+
+[tool.poetry.extras]
+yfinance = ["yfinance"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 122
+lint.select = ["E", "W", "F", "Q", "W", "S", "UP", "I", "PD", "SIM", "PLC", "PLE", "PLR", "PLW"]
+lint.ignore = ["S105", "S106", "S107", "PLR0913", "PLR0912", "PLR0911", "PLR0915", "PD010", "PD013", "S310", "S301", "S101"]
+exclude = ["conftest.py"]
+
+[tool.pylint]
+max-line-length = 122
+disable = [
+    "R0913", # too-many-arguments
+    "W1514", # using-import-outside-toplevel
+    "R0911", # too-many-return-statements
+    "R0912", # too-many-branches
+    "R0915", # too-many-statements
+    "R0801", # duplicate-code
+    "W0221", # arguments-differ
+    "C0103", # invalid-name
+    "E1131", # unsupported-binary-operation
+    "R0917", # too-many-positional-arguments
+    "W0212", # protected-access
+    ]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-wrap-aliases = true
+
+[tool.lint.isort]
+profile = "black"
+line_length = 122
+skip_gitignore = true
+combine_as_imports = true
+
+[tool.codespell]
+ignore-words-list = 'te,hsi,amplitud,nam,tha,plaform'
+skip = '*.json,./.git,pyproject.toml,poetry.lock,examples'
+
+[tool.mypy]
+disable_error_code = "misc, valid-type, attr-defined, index"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::pytest.PytestAssertRewriteWarning:",
+]

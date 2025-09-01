@@ -1,0 +1,32 @@
+Income,Generic
+revenue,Revenue
+costOfRevenue,Cost of Goods Sold
+grossProfit,Gross Profit
+researchAndDevelopmentExpenses,Research and Development Expenses
+generalAndAdministrativeExpenses,General and Administrative Expenses
+sellingAndMarketingExpenses,Selling and Marketing Expenses
+sellingGeneralAndAdministrativeExpenses,"Selling, General and Administrative Expenses"
+otherExpenses,Other Expenses
+operatingExpenses,Operating Expenses
+costAndExpenses,Cost and Expenses
+interestIncome,Interest Income
+interestExpense,Interest Expense
+netInterestIncome,Net Interest Income
+depreciationAndAmortization,Depreciation and Amortization
+ebitda,EBITDA
+ebit,EBIT
+nonOperatingIncomeExcludingInterest,Non Operating Income Excluding Interest
+operatingIncome,Operating Income
+totalOtherIncomeExpensesNet,Total Other Income Expenses
+incomeBeforeTax,Income Before Tax
+incomeTaxExpense,Income Tax Expense
+netIncomeFromContinuingOperations,Net Income from Continuing Operations
+netIncomeFromDiscontinuedOperations,Net Income from Discontinued Operations
+otherAdjustmentsToNetIncome,Other Adjustments to Net Income
+netIncome,Net Income before Deductions
+netIncomeDeductions,Net Income Deductions
+bottomLineNetIncome,Net Income
+eps,EPS
+epsdiluted,EPS Diluted
+weightedAverageShsOut,Weighted Average Shares
+weightedAverageShsOutDil,Weighted Average Shares Diluted

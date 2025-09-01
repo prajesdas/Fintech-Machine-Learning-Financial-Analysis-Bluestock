@@ -1,0 +1,41 @@
+Cash,Generic
+netIncome,Net Income
+depreciationAndAmortization,Depreciation and Amortization
+deferredIncomeTax,Deferred Income Tax
+stockBasedCompensation,Stock Based Compensation
+changeInWorkingCapital,Change in Working Capital
+accountsReceivables,Change in Accounts Receivables
+inventory,Change in Inventory
+accountsPayables,Change in Accounts Payables
+otherWorkingCapital,Change in Other Working Capital
+otherNonCashItems,Other Non Cash Items
+netCashProvidedByOperatingActivities,Cash Flow from Operations
+investmentsInPropertyPlantAndEquipment,"Property, Plant and Equipment"
+acquisitionsNet,Acquisitions
+purchasesOfInvestments,Purchases of Investments
+salesMaturitiesOfInvestments,Sales of Investments
+otherInvestingActivities,Other Investing Activities
+netCashProvidedByInvestingActivities,Cash Flow from Investing
+debtRepayment,Debt Repayment
+netDebtIssuance,Net Debt Issued
+longTermNetDebtIssuance,Long Term Debt Issued
+shortTermNetDebtIssuance,Short Term Debt Issued
+netStockIssuance,Net Stock Issued
+netCommonStockIssuance,Net Common Stock Issued
+commonStockIssuance,Common Stock Issued
+commonStockRepurchased,Common Stock Purchased
+netPreferredStockIssuance,Net Preferred Stock Issued
+commonDividendsPaid,Common Dividends Paid
+preferredDividendsPaid,Preferred Dividends Paid
+netDividendsPaid,Dividends Paid
+otherFinancingActivities,Other Financing Activities
+netCashProvidedByFinancingActivities,Cash Flow from Financing
+effectOfForexChangesOnCash,Forex Changes on Cash
+netChangeInCash,Net Change in Cash
+cashAtEndOfPeriod,Cash End of Period
+cashAtBeginningOfPeriod,Cash Beginning of Period
+operatingCashFlow,Operating Cash Flow
+capitalExpenditure,Capital Expenditure
+freeCashFlow,Free Cash Flow
+incomeTaxesPaid,Income Taxes Paid
+interestPaid,Interest Paid
